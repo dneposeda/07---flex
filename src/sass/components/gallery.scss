@@ -1,0 +1,35 @@
+.gallery {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 40px;
+
+    &__big {
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+
+    &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    &__title {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+
+    &__group {
+        max-width: 372px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+    &__img {
+        max-width: 120px;
+        min-width: 100px;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,30 @@
+.footer {
+    border-top: 1px solid $footer-border;
+    background-color: $bg-footer;
+
+    &__info {
+        margin-top: 27px;
+        padding: 0 15px;
+    }
+
+    &__newsletter {
+        width: 330px;
+    }
+}
+
+.newsletter {
+    margin-bottom: 35px;
+
+    &__title {
+        font-size: 20px;
+    }
+
+    &__desc {
+        font-size: 12px;
+        color: #989898;
+        line-height: 1.4;
+    }
+}
+
+
+
