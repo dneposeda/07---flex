@@ -6,6 +6,7 @@
 
     &__wrap {
         position: relative;
+        overflow:hidden;
     }
 
     &__desc {
@@ -17,6 +18,9 @@
         position: absolute;
         bottom: 20px;
         left: 20px;
+
+        animation: content-slider 4s infinite;
+        
     }
 
     &__title {
@@ -65,6 +69,41 @@
     }
 }
 
+
+  
+@keyframes content-slider {
+    0%{
+        left:-420px;
+    }
+    10%{
+        left:40px;
+    }
+    15%{
+        left:20px;
+    }
+    30%{
+        left:20px;
+    }
+    40%{
+        left:20px;
+    }
+    50%{
+        left:20px;
+    }
+    60%{
+        left:20px;
+    }
+    80%{
+        left:-420px;
+    }
+    90%{
+        left:-420px;
+    }
+    100%{
+        left:-420px;
+    }
+}
+   
 
 
 

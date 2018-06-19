@@ -4,6 +4,7 @@
     &__wrap {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         padding: 25px 15px;
     }
 
@@ -15,6 +16,7 @@
 
 .logo {
     line-height: 1;
+    margin-bottom: 15px;
 
     &__title {
         font-size: 36px;
@@ -28,13 +30,13 @@
 
 
 .nav {
-    background-color: #000;
-    border-radius: 10px;
 
     &__list {
         margin: 0;
         padding: 0;
         font-size: 0;
+        background-color: #000;
+        border-radius: 10px;
     }
 
     &__item {

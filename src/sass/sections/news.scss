@@ -5,7 +5,7 @@
 
     &__item {
         width: 300px;
-        margin: 0 15px 40px;
+        margin: 0 10px 40px;
     }
 
     &__title {
@@ -29,6 +29,13 @@
     &__desc-link {
         color: $linkcolor;
         text-decoration: none;
+        padding-bottom: 3px;
+        border-bottom: 1px solid transparent;
+        transition: border 0.5s;
+
+        &:hover {
+            border-bottom-color: $linkcolor;
+        }
     }
 }
 

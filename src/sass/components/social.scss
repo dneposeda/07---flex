@@ -3,41 +3,52 @@
     &__title {
         font-size: 20px;
         color: $main-color;
+        margin-bottom: 15px;
     }
 
     &__link {
-        display: block;
-        position: relative;
+        display: flex;
+        align-items: center;
+        // display: block;
+        // position: relative;
         text-decoration: none;
         color: $main-color;
-        padding: 15px 35px 15px 40px;
+        // padding: 15px 35px 15px 40px;
     
-        &:before {
-            content: '';
-            display: block;
-            width: 32px;
-            height: 32px;
-            position: absolute;
-            top: 50%;
-            left: 0;
-            transform: translateY(-50%);
-            background: url('../img/s-sprite.png') no-repeat;
-        }
+        // &:before {
+        //     content: '';
+        //     display: block;
+        //     width: 32px;
+        //     height: 32px;
+        //     position: absolute;
+        //     top: 50%;
+        //     left: 0;
+        //     transform: translateY(-50%);
+        //     background: url('/img/s-sprite.png') no-repeat;
+        // }
     
-        &.linkedin-in:before {
-            background-position: -10px -0px;
-        }
+        // &.linkedin-in:before {
+        //     background-position: -10px -0px;
+        // }
     
-        &.pin-in:before {
-            background-position: -52px -0px;
-        }
+        // &.pin-in:before {
+        //     background-position: -52px -0px;
+        // }
         
-        &.rss-in:before {
-            background-position: -10px -42px;
-        }
+        // &.rss-in:before {
+        //     background-position: -10px -42px;
+        // }
         
-        &.tw-in:before {
-            background-position: -52px -42px;
+        // &.tw-in:before {
+        //     background-position: -52px -42px;
+        // }
+
+        &:hover .social__link-icon {
+            background-color: $linkcolor;
+        }
+
+        &:hover .social__link-text {
+            border-bottom-color: $linkcolor;
         }
     }
 
@@ -51,6 +62,24 @@
     &__item {
         flex-basis: 130px;
         list-style: none;
+        margin-bottom: 15px;
     }
 
+    &__link-icon {
+        border-radius: 50%;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 32px;
+        height: 32px;
+        margin-right: 10px;
+        transition: background 0.5s;
+    }
+
+    &__link-text {
+        padding-bottom: 3px;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom-color 0.5s;
+    }
 }

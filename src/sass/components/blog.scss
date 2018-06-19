@@ -1,0 +1,39 @@
+.blog {
+    max-width: 300px;
+    padding: 0 10px;
+
+    &__msg {
+        margin-bottom: 15px;
+    }
+
+    &__header {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    &__title {
+        font-weight: 500;
+        margin-bottom: 4px;
+    }
+
+    &__text {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    &__link-wrap {
+        text-align: right;
+    }
+
+    &__link-more {
+        color: #ff5d30;
+        text-decoration: none;
+        padding-bottom: 3px;
+        border-bottom: 1px solid transparent;
+        transition: border 0.5s;
+
+        &:hover {
+            border-bottom-color: $linkcolor;
+        }
+    }
+}

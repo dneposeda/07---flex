@@ -1,0 +1,40 @@
+.twitter {
+    max-width: 300px;
+    padding: 0 10px;
+
+    &__header {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    &__msg {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    &__text {
+        font-size: 12px;
+    }
+
+    &__author {
+        font-size: 11px;
+    }
+
+    &__link-wrap {
+        text-align: right;
+    }
+
+    &__link-more {
+        color: $linkcolor;
+        text-decoration: none;
+        padding-bottom: 3px;
+        border-bottom: 1px solid transparent;
+        transition: border 0.5s;
+
+        &:hover {
+            border-bottom-color: $linkcolor;
+        }
+    }
+   
+
+}
