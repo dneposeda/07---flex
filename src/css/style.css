@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'ubuntu';
+  src: url("../fonts/ubuntu-regular.woff2") format("woff2"), url("../fonts/ubuntu-regular.woff") format("woff"), url("../fonts/ubuntu-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ubuntu';
+  src: url("../fonts/ubuntu-medium.woff2") format("woff2"), url("../fonts/ubuntu-medium.woff") format("woff"), url("../fonts/ubuntu-medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'ubuntu';
+  src: url("../fonts/ubuntu-bold.woff2") format("woff2"), url("../fonts/ubuntu-bold.woff") format("woff"), url("../fonts/ubuntu-bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
 .header {
   background-color: #ffffff; }
   .header__wrap {
@@ -330,7 +348,7 @@ body {
   background-color: #e2e2e2;
   margin: 0;
   font-size: 13px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "ubuntu", sans-serif;
   color: #666666; }
 
 img {

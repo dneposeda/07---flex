@@ -26,6 +26,7 @@ module.exports = {
             loader: 'css-loader',
         			options: { 
                 minimize: false,
+                url: false,
                 sourceMap: true
               }
           },
@@ -53,11 +54,18 @@ module.exports = {
     
     new CopyWebpackPlugin([
       {
-        from: 'asset/',
+        from: 'asset/img',
         to: 'img/[name].[ext]',
       }
-
     ]),
+
+    new CopyWebpackPlugin([
+      {
+        from: 'asset/fonts',
+        to: 'fonts/[name].[ext]',
+      }
+    ]),
+
   ],
 
 };
