@@ -41,11 +41,12 @@
   padding: 0;
   font-size: 0;
   background-color: #000;
-  border-radius: 10px; }
+  border-radius: 10px;
+  display: flex; }
 
 .nav__item {
   list-style: none;
-  display: inline-block; }
+  position: relative; }
 
 .nav__link {
   display: inline-block;
@@ -60,6 +61,30 @@
   transition: color 0.2s ease-in; }
   .nav__link:hover {
     color: #bdbdbf; }
+
+.nav-sub__list {
+  position: absolute;
+  z-index: 10;
+  min-width: 122px;
+  top: 47px;
+  opacity: 0;
+  transition: 0.3s all;
+  transform: translateX(50%) scale(0);
+  transform-origin: left top;
+  flex-direction: column; }
+  .nav-sub__list--drop2 {
+    top: 0;
+    right: -88%;
+    transform: translateX(-5%) scale(0);
+    transform-origin: top left; }
+
+.nav__drop2:hover .nav-sub__list--drop2 {
+  opacity: 1;
+  transform: translateX(0) scale(1); }
+
+.nav__drop:hover .nav-sub__list--drop {
+  opacity: 1;
+  transform: translateX(0) scale(1); }
 
 .slider {
   margin-top: 30px;
@@ -117,13 +142,28 @@
   15% {
     left: 20px; }
   30% {
+    left: 20px;
+    box-shadow: 0px 0px 43px 3px #ffd500; }
+  35% {
     left: 20px; }
   40% {
+    left: 20px;
+    box-shadow: 0px 0px 43px 3px rgba(255, 213, 0, 0); }
+  45% {
     left: 20px; }
   50% {
+    left: 20px;
+    box-shadow: 0px 0px 43px 3px #ffd500; }
+  55% {
     left: 20px; }
   60% {
+    left: 20px;
+    box-shadow: 0px 0px 43px 3px rgba(255, 213, 0, 0); }
+  65% {
     left: 20px; }
+  70% {
+    left: 20px;
+    box-shadow: 0px 0px 43px 3px #ffd500; }
   80% {
     left: -420px; }
   90% {
@@ -169,6 +209,7 @@
     flex-wrap: wrap; }
   .gallery__title {
     font-size: 26px;
+    font-weight: 400;
     margin-bottom: 30px; }
   .gallery__group {
     max-width: 372px;
@@ -189,10 +230,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; }
-  .footer__newsletter-wrap {
+  .footer__item {
     max-width: 300px;
-    padding: 0 10px; }
-  .footer__newsletter, .footer__blog, .footer__twitter-post {
+    padding: 0 10px;
     margin-bottom: 20px; }
   .footer__copyright {
     display: flex;

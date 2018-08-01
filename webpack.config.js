@@ -54,14 +54,14 @@ module.exports = {
     
     new CopyWebpackPlugin([
       {
-        from: 'asset/img',
+        from: 'assets/img',
         to: 'img/[name].[ext]',
       }
     ]),
 
     new CopyWebpackPlugin([
       {
-        from: 'asset/fonts',
+        from: 'assets/fonts',
         to: 'fonts/[name].[ext]',
       }
     ]),

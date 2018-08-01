@@ -37,11 +37,12 @@
         font-size: 0;
         background-color: #000;
         border-radius: 10px;
+        display: flex;
     }
 
     &__item {
         list-style: none;
-        display: inline-block;
+        position: relative;
     }
 
     &__link {
@@ -61,4 +62,39 @@
         }
     }
 }
+
+.nav-sub__list {
+    position: absolute;
+    z-index: 10;
+    min-width: 122px;
+    top: 47px;
+    opacity: 0;
+    transition: 0.3s all;
+    transform: translateX(50%) scale(0);
+    transform-origin: left top;
+    flex-direction: column;
+
+    &--drop2 {
+        top: 0;
+        right: -88%;
+        transform: translateX(-5%) scale(0);
+        transform-origin: top left;
+    }
+}
+
+.nav__drop2:hover {
+    .nav-sub__list--drop2 {
+        opacity: 1;
+        transform:  translateX(0) scale(1);
+    }
+}
+
+.nav__drop:hover {
+    .nav-sub__list--drop {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+
 

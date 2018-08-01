@@ -10,7 +10,7 @@
     "delete:dist": "rimraf -- dist .awcache",
     "server": "node server.js",
     "build": "webpack --mode production",
-    "build:prod": "npm run delete:dist && npm run sass && webpack --mode production"
+    "build:prod": "npm run delete:dist && npm run sass && npm run dev"
   },
   "keywords": [],
   "author": "Denis Tivikov",
@@ -31,6 +31,8 @@
     "webpack-cli": "^3.0.1"
   },
   "dependencies": {
-    "normalize.css": "^8.0.0"
+    "animate.css": "^3.7.0",
+    "normalize.css": "^8.0.0",
+    "wowjs": "^1.1.3"
   }
 }
